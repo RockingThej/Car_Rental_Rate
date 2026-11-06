@@ -1,5 +1,5 @@
 from hypothesis import given, strategies as st
-from processor import sanitize_license_plate, parse_trip_mileage, format_rental_invoice
+from PES2UG24CS562_processor import sanitize_license_plate, parse_trip_mileage, format_rental_invoice
 
 @given(st.text() | st.none())
 def test_sanitize_license_plate_no_crash(s):
